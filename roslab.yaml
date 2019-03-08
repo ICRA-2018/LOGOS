@@ -1,0 +1,20 @@
+name: logos
+
+base: 
+  ubuntu: 16.04
+  opengl: runtime
+
+apt:
+  - gcc-4.9
+  - g++-4.9
+
+matlab:
+  host_path: /usr/local/MATLAB/R2017a
+  mac_address: "2c:60:0c:d6:50:36"
+
+custom:
+  - rm /usr/bin/gcc
+  - ln -s /usr/bin/gcc-4.9 /usr/bin/gcc
+  - rm /usr/bin/g++
+  - ln -s /usr/bin/g++-4.9 /usr/bin/g++
+
