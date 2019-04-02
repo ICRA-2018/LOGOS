@@ -2,7 +2,6 @@ name: logos
 
 base: 
   ubuntu: 16.04
-  opengl: runtime
 
 apt:
   - gcc-4.9
